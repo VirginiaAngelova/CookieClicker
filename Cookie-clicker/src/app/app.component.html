@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <i class=" navbar-brand fas fa-cookie-bite"></i>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/store">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container p-2">
+  <router-outlet></router-outlet>
+</div>

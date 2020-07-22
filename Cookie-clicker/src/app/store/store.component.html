@@ -1,0 +1,91 @@
+<div class="table-responsive-sm-md-lg">
+    <table class="table table-bordered table-hover" style="text-align: center;" id="table">
+        <thead>
+            <tr>
+                <th colspan="3" class="bg-info">Cookies upgrades:</th>
+            </tr>
+            <tr>
+                <th scope="col">Upgrades name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Buy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    {{ titleCursor }}:
+                </td>
+                <td>
+                    <span>
+                        {{ cursorPrice }}cookies
+                    </span>
+                </td>
+                <td>
+                    <button type="button" class="btn" [disabled]="disabledCursorPurchase"
+                        (click)='buyCursorUpgrades()'>Buy</button>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    {{ titleGrandma }}:
+                </td>
+                <td>
+                    <span>
+                        {{ grandmaPrice }} cookies
+                    </span>
+                </td>
+                <td>
+                    <button type="button" class="btn" [disabled]="disabledGrandmaPurchase"
+                        (click)='buyGrandmaUpgrades()'>Buy</button>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    {{ titleFarm }}:
+                </td>
+                <td>
+                    <span>
+                        {{ farmPrice }}cookies
+                    </span>
+                </td>
+                <td>
+                    <button type="button" class="btn" [disabled]="disabledFarmPurchase"
+                        (click)='buyFarmUpgrades()'>Buy</button>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    {{ titleMine }}:
+                </td>
+                <td>
+                    <span>
+                        {{ minePrice }} cookies
+                    </span>
+                </td>
+                <td>
+                    <button type="button" class="btn" [disabled]="disabledMinePurchase"
+                        (click)='buyMineUpgrades()'>Buy</button>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3" class="bg-info" style="color: aliceblue;">
+                    <p>Time upgrades:</p>
+                </th>
+            </tr>
+            <tr>
+                <td scope="row">
+                    {{ titleTimeBoost }}:
+                </td>
+                <td>
+                    <span>
+                        {{ timeBoostPrice }} cookies
+                    </span>
+                </td>
+                <td>
+                    <button type="button" class="btn" [disabled]="disabledTimeBoostPurchase"
+                        (click)='buyTimeBoostUpgrades()'>Buy</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
